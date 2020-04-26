@@ -1,0 +1,81 @@
+.Adventeges__picturse{
+    background-image: url(https://colorlib.com/preview/theme/drpro/images/why_1.jpg);
+    width: 50%;
+    height: 630px;
+    position: relative;
+   
+}
+.Adventeges{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+  }
+    .Adventeges__content{
+      display: flex;
+      flex-direction: column;
+      padding-top:20px;
+      background-color: #eff3f7;
+      width:50%;
+      height: 630px;
+      box-sizing: border-box;
+      }
+   .Adventeges__content-TDP{
+    color: $color__grey;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+   }
+  
+   .Adventeges__content-titel{
+    margin-top: -1px;
+    color: rgb(61, 60, 60);
+    font-size: 53px;
+    font-weight: 200;
+    width: 600px;
+   }
+   .Adventeges__content-text{
+    width: 400px;
+    color: grey;
+    font-size: 13px;
+    line-height: 1.9;
+        
+   }
+
+  .Adventeges__list{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .Adventeges__list-blok{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 470px;
+    margin-bottom: 25px;
+  }
+  .Adventeges__list-img{
+    background-color: $color__blue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+
+  .Adventeges__description-titel{
+   color:rgb(66, 65, 65);
+    font-size: 20px;
+    line-height: 1.9;
+    margin: 0px;
+  }
+
+  .Adventeges__description-paragraf{
+    color: rgb(163, 162, 162);
+     font-size: 16px;
+    font-weight: 400;
+    margin-top: -10px;
+    line-height: 1.9;
+  }

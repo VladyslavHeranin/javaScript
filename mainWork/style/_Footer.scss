@@ -1,0 +1,29 @@
+
+.footer{
+    display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background: #181a1d;
+        margin: 0px;
+}
+
+.footer__text{
+    font-size: 11px ;
+    color:rgb(92, 92, 92);
+    font-weight: 600;
+}
+
+.navigation__link{
+    color:rgb(27, 65, 146);
+   &:hover{
+        color:rgb(10, 22, 133);
+        transition: 0.5s;
+    }
+}
+.footer__menu-item{
+    @extend %navigation;  
+    font-size: 12px;
+}
+

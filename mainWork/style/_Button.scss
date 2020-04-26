@@ -1,0 +1,16 @@
+%buttonR{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 49px;
+    border-radius: 50px 50px 50px 50px ;
+    color: $color__blue;
+    border: 2px solid $color__blue;
+    background-color: rgba(0,0,0,0);
+    &:hover{
+         color: white;
+         background-color: $color__blue;
+         border: 2px solid $color__blue;
+         transition: 0.5s;
+}
+}

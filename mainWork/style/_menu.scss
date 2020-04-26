@@ -1,0 +1,13 @@
+%navigation{
+    color: red;
+    font-size: 15px ;
+    display: flex;
+    padding: 10px;
+    display: inline;
+    text-decoration: none;
+    color:rgb(100, 100, 100);
+    font-weight: 600;
+    &:hover{
+      color:$color__blue;
+    }
+  }

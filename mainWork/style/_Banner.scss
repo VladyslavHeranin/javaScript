@@ -1,0 +1,124 @@
+
+
+.wrapper{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    }
+    
+    .slides {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .slides-item{
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    .dots-block{
+        position: absolute;
+        left: 300px;
+        bottom: 50px;
+        transform: translateX(-50%);
+    }
+    
+    
+    .dots-item{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 7px;
+        background-color:rgb(167, 164, 164);
+        &:hover{
+            background-color:rgb(4, 216, 188) ;
+            transition: 0.5s;
+        }
+         cursor: pointer;
+    }
+    
+    .dots-item:last-child {
+        margin: 0;
+    }
+    
+    .active {
+        background-color: rgb(167, 164, 164);
+        &:hover{
+            background-color:rgb(4, 216, 188) ;
+            transition: 0.5s;
+        }
+    }
+
+    
+
+.Banner__content{
+        position: absolute;
+        width: 700px;
+        height: 150px;
+        left: 250px;
+        top: 150px;
+       }
+       .Banner__titel{
+           color: $color__blue;
+           font-size: 30px;
+           margin-bottom: -50px;
+           font-weight: 600;
+           width: 380px;
+        }
+        .Banner__Text{
+            color: rgb(88, 88, 88);
+            font-size: 58px;
+            margin-bottom: -10px;
+            font-weight: 200;
+            width: 550px;
+        }
+          .Banner__paragraph{
+              width: 450px;
+              color: grey;
+              font-size: 13px;
+              line-height: 1.9;
+
+          }
+
+          .Banner__btn{
+              display:flex ;
+              width:440px;
+              justify-content: space-between;
+
+             }
+           
+ .button-red{
+             @extend %buttonR; 
+             width:180px;
+             background-color:$color__red ;
+             border: 2px solid $color__red ;
+             color: seashell;
+           &:hover{
+               color: $color__red ;
+               background-color:rgba(0, 0, 0, 0);
+               border: 2px solid $color__red ;
+               border-color:$color__red ;
+               transition: 0.5s;
+             }
+            
+}
+ .button-blue{
+             @extend %buttonR;
+               width:250px;
+               background-color:rgba(0, 0, 0, 0);
+               border: 2px solid $color__blue;
+               color: $color__blue;
+             &:hover{
+               color: white;
+               background-color:$color__blue ;
+               border: 2px solid $color__blue ;
+               border-color:$color__blue ;
+               transition: 0.5s;
+             }
+}
+ 
+          
+
