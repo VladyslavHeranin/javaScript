@@ -1,0 +1,221 @@
+.bgheader{
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.conteyner{
+  width: 80%;
+}
+
+.pargraph{
+    display: none;
+}
+
+
+.header__section{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__title{
+    display: flex;
+    flex-direction: column;
+    width:10%;
+}
+
+.header__title-row{
+    display: flex;
+    flex-direction: row;    
+}
+
+.header__title-Dr{
+    font-size: 28px;
+    font-weight: 700;
+    margin-right:3px;
+}
+
+.header__title-Pro{
+    font-size: 27px;
+    color: $color__blue ;
+    font-weight: 700;
+}
+
+.header__title-PS{
+    color: silver;
+    font-size: 15px;
+    width: 100%;
+}
+
+.navigation{
+    width: 30%;
+}
+
+.navigation__menu li{
+    list-style-type: none;
+    display: inline; 
+    margin-left: 15px;
+  }
+
+  .navigation__menu li:hover{
+    color:$color__blue ;
+    transition: 0.2s;
+  }
+
+  .navigation__menu-HOME{
+      color:$color__blue;
+  }
+
+  .contacts{
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+  }
+
+  .number{
+    display: flex;
+    background-color: $color__blue;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 42px;
+    border-radius: 50px 50px 50px 50px  ;
+    color: white;
+    border: 2px solid $color__blue;
+  }
+
+  .header__button{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 42px;
+        border-radius: 50px 50px 50px 50px ;
+        color: white;
+        border: 2px solid $color__red;
+        background-color: $color__red;
+        font-size: 14px;
+        width: 55%;
+        &:hover{
+             color:  $color__red;
+             background-color: white;
+             border: 2px solid $color__red;
+             transition: 0.5s;
+           }
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 11.5%;
+       }
+      .logo__backgraund{
+          background-color: rgb(221, 220, 220);
+          color: rgb(87, 86, 86);
+          width: 30px;
+          height:30px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 5px;
+          &:hover{
+            background-color: $color__blue;
+            color: white;
+            transition: 0.5s;
+          }
+        }
+
+
+
+        @media (max-width:1400px){
+            .conteyner{
+                max-width: 90%;
+            }
+            .logo{
+                 width: 13%;
+               }
+               .header__title{
+                width:10%;
+            }
+           
+            .header__button{
+                width: 100%;
+            }
+            .number{
+              display: none;
+            }
+            .contacts{
+             display: flex;
+              width:30% ; 
+              justify-content: center;  
+            }
+            .navigation{
+                width: 35%;
+            }
+        } 
+
+        @media (max-width:1200px){
+            .conteyner{
+                max-width: 80%;
+            }
+            .navigation{
+                width: 65%;
+            }
+            .logo{
+                width: 15%;
+              }
+              .header__title{
+                width:15%;
+            } 
+            .contacts{
+                   display: none;
+               }
+          }
+
+        @media (max-width:1000px){
+            .conteyner{
+                max-width:80%;
+            }
+            .logo{
+                 width: 20%;
+               }
+             .navigation{
+               display: none;
+            }
+
+            .header__title{
+                width:20%;
+            }
+          }
+
+          @media (max-width:800px){
+            .conteyner{
+                max-width:80%;
+            }
+            .logo{
+               display: none;
+               }
+
+            .pargraph{
+                display:inline-table;
+            }
+             .navigation{
+               display: none;
+            }
+
+            .header__title{
+                width:30%;
+            }
+          }
+
+
+      
+  
