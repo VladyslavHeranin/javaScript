@@ -1,0 +1,129 @@
+.Discount{
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+.Discount__main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.Discount__main-info{
+    box-shadow: 00px 23px 30px rgba(179, 178, 178, 0.5);
+    height: 70%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+}
+
+.Discount__main-conteyner{
+    height: 85%;
+    width: 80%;
+}
+
+.Discount__main-text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Discount__procent{
+    font-size: 60px;
+    color: $color__blue ;
+    font-weight: 700;
+}
+
+.Discount__procent-simbol{
+    font-size: 40px;
+    color: $color__blue ;
+    font-weight: 300;
+}
+
+.Discount__Discount{
+    color: rgb(151, 151, 151);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Discount__main-title{
+    color: rgb(71, 71, 71);
+    font-size: 65px;
+    line-height: 1.0;
+    width: 100%;
+    height: 20%;
+}
+
+.Discount__main-text{
+    width: 100%;
+    color: grey;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.Discount__main-button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 20%;
+    border-radius: 50px 50px 50px 50px ;
+    color: $color__red;
+    border: 2px solid $color__red;
+    background-color: rgba(0,0,0,0);
+    font-size: 14px;
+    width: 60%;
+    &:hover{
+         color: white;
+         background-color: $color__red;
+         border: 2px solid $color__red;
+         transition: 0.5s;
+ }
+}
+
+@media (max-width:1400px){
+      .Discount__main-info{
+        width: 43%;
+    }
+} 
+
+@media (max-width:1200px){
+      .Discount__main{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+       }
+       .Discount__main-info{
+         width: 63%;
+     }
+  }
+
+@media (max-width:1000px){
+    .Discount__main-info{
+        width: 75%;
+    }
+  }
+
+  @media (max-width:800px){
+    .Discount__main-info{
+        width: 65%;
+    }
+  }
+
+  @media (max-width:700px){
+    .Discount__main-info{
+        width: 100%;
+    }
+  }
+
+
