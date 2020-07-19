@@ -1,0 +1,210 @@
+.Adventeges{
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.Adventeges__info{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Adventeges__photo{
+    width: 80%;
+    height: 100%;
+}
+
+.Adventeges__src{ 
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.Adventeges__info-text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction: column;
+}
+
+.Adventeges__conteyner{
+   height: 100%; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 81%;
+}
+
+.Adventeges__content-block{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+}
+
+.Adventeges__content-TDP{
+    color: $color__grey;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.Adventeges__content-titel{
+    color: rgb(61, 60, 60);
+    font-size: 53px;
+    font-weight: 200;
+}
+
+.Adventeges__content-text{
+    color: grey;
+    font-size: 13px;
+    line-height: 1.9;
+    display: flex;
+    align-items: flex-start;
+    width: 75%;
+}
+
+.Adventeges__list{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+}
+
+  .Adventeges__list-blok{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 100%;
+    margin-top:20px;
+  }
+
+  .Adventeges__list-img{
+    background-color: $color__blue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 40px;
+  }
+
+  .Adventeges__description-titel{
+   color:rgb(66, 65, 65);
+    font-size: 20px;
+    line-height: 1.9;
+   }
+
+  .Adventeges__description-paragraf{
+    color: rgb(163, 162, 162);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -10px;
+    line-height: 1.9;
+  }
+
+  @media (max-width:1400px){
+   .Adventeges__photo{
+        width: 80%;
+    } 
+       .Adventeges__list{
+        width: 100%;
+    } 
+     .Adventeges__conteyner{
+        width: 80%;
+     }
+} 
+
+@media (max-width:1200px){
+     .Adventeges__photo{
+        width: 110%;
+        position: relative;
+        right: 20px;
+    } 
+       .Adventeges__list{
+        width: 100%;
+    }
+    .Adventeges__conteyner{
+        width: 95%;
+     }
+     .Adventeges__content-text{
+        font-size: 13px;
+        line-height: 2;
+        width: 85%;
+        
+    }
+}
+
+@media (max-width:1000px){
+    .Adventeges__photo{
+        width: 100%;
+        position: relative;
+        right: 0px;
+    } 
+    .Adventeges__photo{
+        width: 100%;
+    }
+
+    .Adventeges{
+        height: 1650px;
+
+    }
+
+       .Adventeges__info{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .Adventeges__info-text{
+        width: 70%;
+        justify-content: center;
+        align-items:center;
+        height: 100%;
+    }  
+
+     .Adventeges__conteyner{
+        height: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+     }
+     
+}
+
+
+  @media (max-width:768px){
+    .Adventeges__src{ 
+        width: 100%;
+    }
+      .Adventeges__photo{
+        width: 100%;
+    }
+
+    .Adventeges__info-text{
+        width: 100%;
+    }
+  }
+
+  @media (max-width:700px){
+
+  }
+
+
+
+
