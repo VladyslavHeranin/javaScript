@@ -1,0 +1,133 @@
+main{
+    display: flex;
+    align-items: flex-start;
+     width: 100%;
+     justify-content: center;
+     height: 800px;
+}
+
+
+.content{
+    display: flex;
+    width: 400px;
+    background-color: cadetblue;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 600px;
+    flex-direction: column;
+}
+
+.img{
+    display: flex;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTh87QN4DkF7s92IFSfm7b7S4IR6kTdzIlhbw&usqp=CAU') ;
+    width: 100%;
+    height: 25%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    align-items: flex-end;
+}
+
+.data{
+margin: 10px;
+font-size: 24px;
+color: cornsilk;
+}
+
+
+.list{
+    display: flex;
+    flex-direction:column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item{
+   
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border:solid 2px whitesmoke;
+    background-color: rgb(66, 173, 66);
+}
+
+#x{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+#x:hover{
+    font-size: 27px;
+    color:rgb(116, 194, 116);
+    transition: 0.5s;
+}
+
+#y{
+    font-size: 25px;
+    color: green;
+}
+
+#y:hover{
+    font-size: 25px;
+    color: rgb(130, 190, 130);
+    transition: 0.5s;
+}
+
+#trash{
+    font-size: 23px;
+}
+
+#trash:hover{
+    font-size: 25px;
+    color: rgb(138, 9, 9);
+}
+
+.infolinethrough{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-decoration: line-through; 
+}
+
+.info{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.toDOlist{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 75%;
+}
+
+.input{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+    height: 10%;
+    margin-bottom: 5px;
+}
+
+.button{
+    height:100%;
+    width: 12%;
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-size: 33px;
+}
+
+.text{
+    height:88%;
+    width: 80%;
+    margin-right: 5px;
+    font-size: 33px;
+}
+
