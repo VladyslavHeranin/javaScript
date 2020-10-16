@@ -40,6 +40,7 @@ while (remainingLetters > 0) {
         for (var j = 0; j < word.length; j++) {
             if (word[j] === guess) {
                 answerArray[j] = guess;
+                  
                 if (answerArray.join("") === answerArray.join("")) {
                     break;
                 }

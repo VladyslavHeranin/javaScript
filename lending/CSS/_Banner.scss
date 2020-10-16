@@ -8,8 +8,7 @@
     display: flex;
     justify-content: center;
     height: 100%;
-    object-fit: cover;
-    background-image: url(https://colorlib.com/preview/theme/drpro/images/home_slider.jpg);
+    background-color: rgb(236, 233, 233);
 }
 
 
@@ -92,7 +91,7 @@
     width: 65%;
     &:hover{
          color:$color__blue ;
-         background-color: white;
+         background-color: rgba(255, 255, 255, 0);
          border: 2px solid $color__blue;
          transition: 0.5s;
  }
@@ -110,7 +109,6 @@
  .main__conteyner{
     width:90%;
     height: 100%;
-    background-color: yellowgreen;
   }
 
   .main__conteyner-Banner{
@@ -126,7 +124,6 @@
     .main__conteyner{
         width:90%;
         height: 100%;
-        background-color: rgb(58, 106, 179);
       }
       
   }
@@ -139,7 +136,6 @@
       .main__conteyner{
           width:90%;
           height: 100%;
-          background-color: rgb(0, 72, 172);
         }
     }
 
@@ -153,7 +149,6 @@
     .main__conteyner{
         width:90%;
         height: 100%;
-        background-color: rgb(214, 211, 22);
       }
   }
 
@@ -165,7 +160,6 @@
       .main__conteyner{
           width:90%;
           height: 80%;
-          background-color: rgb(50, 42, 71);
         }
     }
 
@@ -178,7 +172,6 @@
     .main__conteyner{
         width:90%;
         height: 100%;
-        background-color: rgb(4, 180, 224);
       }
   }
 

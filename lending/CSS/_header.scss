@@ -9,7 +9,7 @@
 }
 
 .conteyner{
-  width: 80%;
+  width: 85%;
 }
 
 .pargraph{
@@ -28,7 +28,7 @@
 .header__title{
     display: flex;
     flex-direction: column;
-    width:10%;
+    width:14%;
 }
 
 .header__title-row{
@@ -133,7 +133,9 @@
           }
         }
 
-
+       .header__burger{
+           display: none;
+       }
 
         @media (max-width:1400px){
             .conteyner{
@@ -143,7 +145,7 @@
                  width: 13%;
                }
                .header__title{
-                width:10%;
+                width:14%;
             }
            
             .header__button{
@@ -173,25 +175,21 @@
                 width: 15%;
               }
               .header__title{
-                width:15%;
+                width:28%;
             } 
             .contacts{
                    display: none;
-               }
+               }   
           }
 
         @media (max-width:1000px){
             .conteyner{
                 max-width:80%;
             }
-            .logo{
-                 width: 20%;
-               }
-             .navigation{
-               display: none;
+            .navigation{
+                display: none;
             }
-
-            .header__title{
+             .header__title{
                 width:20%;
             }
           }
@@ -200,21 +198,118 @@
             .conteyner{
                 max-width:80%;
             }
+
             .logo{
-               display: none;
-               }
+                z-index: 1;
+                display: flex;
+                width: 100px;
+                position: relative;
+                left: 160px;
+                top: 370px;
+            }
+
+        @media (max-width:700px){
+            .logo{
+           margin-right: 100px;
+            }
+        }
 
             .pargraph{
                 display:inline-table;
             }
-             .navigation{
-               display: none;
-            }
-
             .header__title{
                 width:30%;
             }
+            
+            .header__burger{
+                display: block;
+                width: 30px;
+                position: relative;
+                height: 30px;
+                z-index: 1;
+                transition: all 1.3s ease 1.3s;
+            }
+        
+            .header__burger:before,
+            .header__burger:after{
+              content:'';
+              background-color:white;
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              transition: all 0.5s ease 0s;
+            }
+        
+            .header__burger:before{
+                       top: 12;
+                        transform: rotate(45deg);
+            }
+        
+            .header__burger:after{
+                       bottom: 12;
+                       transform: rotate(-45deg);
+            }
+        
+           .header__burger.active:before{
+            height: 1px;
+            background-color: #04d8bc; 
+            transform: rotate(0deg);
+            top: 0;
+           }
+        
+           .header__burger.active:after{
+            height: 1px;
+            background-color: #04d8bc;
+            transform: rotate(0deg);
+            bottom: 0;
+           }
+        
+           .header__burger span{
+            width: 100%;
+            height: 0px;
+            position: absolute;
+            left: 0;
+            top: 15px;
+            transition: all 0.5s ease 0s;
           }
+        
+          .header__burger.active span{
+            height: 2px;
+            background-color:  #04d8bc;
+          }
+        
+           .navigation{
+                display: block;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 60%;
+                height: 100%;
+                background-color: rgb(8, 235, 223);
+                padding:100px 40px 0px 0px;
+             }
+
+             .navigation__menu-HOME{
+                color:white;
+            }
+
+            .navigation__menu li{
+                color:white;
+                display: flex;
+                font-size: 25px;
+                margin: 15px;
+                justify-content: flex-end;
+              }
+
+              .navigation.active{
+                right: -100%;
+                transition: all 0.5s ease 0s;
+             }
+
+             .logo.active{
+                  display: none;
+             }
+     }
 
 
       
